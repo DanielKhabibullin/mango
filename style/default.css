@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6, p {
 .container {
 	max-width: 1440px;
 	margin: 0 auto;
-  padding: 0 calc(15px + (80 - 30) * ((100vw - 320px) / (1440 - 320)));
+  padding: 0 80px;
 }
 .hide {
 	display: none;
@@ -86,13 +86,29 @@ button {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-.fz64 {
-  font-size: 64px;
-  text-transform: uppercase;
+.fz96m32 {
+  font-size: 96px;
 }
-.fz40 {
+.fz64m32 {
+  font-size: 64px;
+}
+.fz64m24 {
+  font-size: 64px;
+}
+.fz48m16 {
+  font-size: 48px;
+}
+.fz40m18 {
   font-size: 40px;
-  text-transform: uppercase;
+}
+.fz32m16 {
+  font-size: 32px;
+}
+.fz24m16 {
+  font-size: 24px;
+}
+.f24m15 {
+  font-size: 24px;
 }
 .fz24 {
   font-size: 24px;
@@ -119,11 +135,32 @@ button {
 }
 
 @media (max-width: 1440px) {
-  .fz64 {
-    font-size: calc(26px + (64 - 26) * ((100vw - 320px) / (1440 - 320)));
+  .container {
+   padding: 0 calc(30px + (80 - 30) * ((100vw - 320px) / (1440 - 320)));
   }
-  .fz40 {
-    font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (1440 - 320)));
+  .fz96m32 {
+    font-size: calc(32px + (96 - 32) * ((100vw - 320px) / (1440 - 320)));
+  }
+  .fz64m32 {
+    font-size: calc(32px + (64 - 32) * ((100vw - 320px) / (1440 - 320)));
+  }
+  .fz64m24 {
+    font-size: calc(24px + (64 - 24) * ((100vw - 320px) / (1440 - 320)));
+  }
+  .fz48m16 {
+    font-size: calc(16px + (48 - 16) * ((100vw - 320px) / (1440 - 320)));
+  }
+  .fz40m18 {
+    font-size: calc(18px + (40 - 18) * ((100vw - 320px) / (1440 - 320)));
+  }
+  .fz32m16 {
+    font-size: calc(16px + (32 - 16) * ((100vw - 320px) / (1440 - 320)));
+  }
+  .fz24m16 {
+    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1440 - 320)));
+  }
+  .fz24m15 {
+    font-size: calc(15px + (24 - 15) * ((100vw - 320px) / (1440 - 320)));
   }
 }
 

@@ -17,7 +17,6 @@
 .btn.hide {
   display: none;
 }
-
 .btn:focus {
   color: var(--black);
   outline: 1px solid var(--black);
@@ -32,20 +31,28 @@
 .btn_main {
   margin: 48px 0 0 0; /* TODO */
 }
-
+.btn_services {
+  margin: 50px 0 0 0; /* TODO */
+  align-self: center;
+}
 .btn_lg {
   padding: 24px 40px;
   font-size: 24px;
 }
 
-
 @media (max-width: 1440px) {
-  .btn {
-    padding: 12px 24px; /* TODO */
-  }
+  /* .btn {
+    padding: 12px 24px;
+  } */
 
   .btn_lg {
-    padding: calc(10px + (24 - 10) * ((100vw - 320px) / (1440 - 320))) calc(20px + (40 - 20) * ((100vw - 320px) / (1440 - 320))); /* TODO */
-    font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1440 - 320))); /* TODO */
+    padding: calc(12px + (24 - 12) * ((100vw - 320px) / (1440 - 320))) calc(24px + (40 - 24) * ((100vw - 320px) / (1440 - 320)));
+    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+@media (max-width: 500px) {
+  .btn_header {
+    display: none;
   }
 }

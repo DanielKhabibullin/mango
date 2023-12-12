@@ -2,7 +2,7 @@
 	display: none;
 	position: relative;
   z-index: 10;
-	--width: 28px;
+	--width: 30px;
 	--height: 22px;
 	--size-line: 2px;
 	--color: var(--font-white);

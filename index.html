@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="style/burger.css">
   <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/navigation.css">
+  <link rel="stylesheet" href="style/results.css">
+  <link rel="stylesheet" href="style/services.css">
   <link rel="stylesheet" href="style/social.css">
   <link rel="stylesheet" href="style/about.css">
   <link rel="stylesheet" href="style/buttons.css">
@@ -17,15 +19,15 @@
   <link rel="stylesheet" href="style/footer.css">
   <link rel="stylesheet" href="style/modal.css">
   <script type="text/javascript" src="script/burger.js" defer></script>
-  <script type="text/javascript" src="script/scroll.js" defer></script>
-  <script type="text/javascript" src="script/accordion.js" defer></script>
+  <!-- <script type="text/javascript" src="script/scroll.js" defer></script> -->
+  <!-- <script type="text/javascript" src="script/accordion.js" defer></script> -->
   <script type="text/javascript" src="script/modal.js" defer></script>
 
 </head>
 <body>
   <div class="wrapper">
-    <!-- <header class="header  header_white">
-      <div class="header_white_before  hidden"></div>
+    <!-- <header class="header  header_opaque">
+      <div class="header_opaque_before  hidden"></div>
       <div class="container  header__container">
         <a class="header__logo-link" href="/">
           <img class="header__logo  logo" src="/img/" alt="" />
@@ -34,19 +36,24 @@
           <nav class="header__navigation  navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a data-goto="" href="" class="navigation__link"></a>
+                <a data-goto="" href="" class="navigation__link 
+ fz24m16"></a>
               </li>
               <li class="navigation__item">
-                <a data-goto="" href="" class="navigation__link"></a>
+                <a data-goto="" href="" class="navigation__link 
+ fz24m16"></a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#"></a>
+                <a class="navigation__link 
+ fz24m16" href="#"></a>
               </li>
               <li class="navigation__item">
-                <a data-goto="" href="" class="navigation__link"></a>
+                <a data-goto="" href="" class="navigation__link 
+ fz24m16"></a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#"></a>
+                <a class="navigation__link 
+ fz24m16" href="#"></a>
               </li>
             </ul>
             <ul class="header__social-list  social-list">
@@ -91,76 +98,46 @@
         </div>
       </div>
     </header> -->
-    <!-- <header class="header  header_transparent">
+    <header class="header  header_transparent">
       <div class="container  header__container">
         <a class="header__logo-link" href="/">
-          <img class="header__logo  logo" src="/img/" alt="" />
+          <img class="header__logo  logo" src="/img/logo.png" alt="логотип Манго маркетинг"/>
         </a>
         <div class="header__menu  menu">
           <nav class="header__navigation  navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a data-goto="" href="" class="navigation__link"></a>
+                <a data-goto="" href="" class="navigation__link  fz24m16">Услуги</a>
               </li>
               <li class="navigation__item">
-                <a data-goto="" href="" class="navigation__link"></a>
+                <a data-goto="" href="" class="navigation__link  fz24m16">о компании</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#"></a>
+                <a class="navigation__link  fz24m16" href="#">кейсы</a>
               </li>
               <li class="navigation__item">
-                <a data-goto="" href="" class="navigation__link"></a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#"></a>
+                <a data-goto="" href="" class="navigation__link  fz24m16">контакты</a>
               </li>
             </ul>
-            <ul class="header__social-list  social-list">
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" target="_blank">
-                  <svg class="social-list__svg" viewBox="0 0 40 40">
-                    <use xlink:href="#vk_green"/>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" target="_blank">
-                  <svg class="social-list__svg" viewBox="0 0 40 40">
-                    <use xlink:href="#tg_green"/>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#" target="_blank">
-                  <svg class="social-list__svg" viewBox="0 0 40 40">
-                    <use xlink:href="#instagram_green"/>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <button class="btn  hide">Заказать звонок</button>
           </nav>
-        </div>
-        <div class="header__reserve">
-          <a href="tel:+79177749555" target="_blank">
-            <svg class="call  call_white" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="#phone"/>
-            </svg>
-          </a>
-          <div class="header__btn-wrapper">
-            <button class="btn  btn_modal2">Заказать звонок</button>
-          </div>
+          <button class="btn  btn_header  btn_modal2">
+            Заказать звонок
+          </button>
+          <button class="burger  header__burger">
+            <span class="burger__line"></span>
+          </button>
         </div>
       </div>
-    </header> -->
+    </header>
+
     <main class="main">
       <div class="container">
         <div class="main-wrapper">
           <div class="main__left">
-            <h1 class="main__title  fz64  f_mango">
+            <h1 class="main__title  fz64m24  f_mango">
               Репутация, узнаваемость, увеличение продаж.
             </h1>
-            <div class="main__subtitle  fz40  f_white">
+            <div class="main__subtitle  fz40m18  f_white">
               Да, мы сделаем это для вас.
             </div>
             <button class="btn  btn_lg  btn_main">Заказать звонок
@@ -168,6 +145,7 @@
           </div>
           <div class="main__right">
             <img class="main__img" src="/img/mango.png" alt="">
+            <!-- <div class="main__img"></div> -->
           </div>
         </div>
       </div>
@@ -177,32 +155,78 @@
       <div class="container">
         <ul class="results-items">
           <li class="results-item">
-            <p class="results-item__title  fz64  f_black">
+            <p class="results-item__title  fz64m32  f_black">
               300+
             </p>
-            <p class="results-item__subtitle  fz24  f_black">
+            <p class="results-item__subtitle  fz24m16  f_black">
               успешных кейсов
             </p>
           </li>
           <li class="results-item">
-            <p class="results-item__title  fz64  f_black">
+            <p class="results-item__title  fz64m32  f_black">
               100+
             </p>
-            <p class="results-item__subtitle  fz24  f_black">
+            <p class="results-item__subtitle  fz24m16  f_black">
               отзывов от наших клиентов
             </p>
           </li>
           <li class="results-item">
-            <p class="results-item__title  fz64  f_black">
+            <p class="results-item__title  fz64m32  f_black">
               100%
             </p>
-            <p class="results-item__subtitle  fz24  f_black">
+            <p class="results-item__subtitle  fz24m16  f_black">
               вовлечённость команды
             </p>
           </li>
         </ul>
       </div>
     </div>
+
+    <section class="services">
+      <div class="container">
+        <div class="services-wrapper">
+          <h1 class="services__title  fz96m32  f_white">Услуги</h1>
+          <div class="services__subtitle  f24m15  f_white">Какой-нибудь призыв</div>
+          <ul class="services__list">
+            <li class="services__item">
+              <div class="services__img">
+                <img src="/img/services1.png" alt="">
+              </div>
+              <div class="services__text  fz32m16  f_white">
+                <p>Создание сайта</p>
+                <p class="services__price  fz48m16  f_white">от <span class="fz64m24">50 000</span> р</p>
+              </div>
+              <button class="btn  btn_services-item">Написать</button>
+            </li>
+            <li class="services__item">
+              <div class="services__img">
+                <img src="/img/services1.png" alt="">
+              </div>
+              <div class="services__text  fz32m16  f_white">
+                <p>Контекстная реклама</p>
+                <div class="services__price  f_white">
+                  <p class="fz48m16">от <span class="fz64m24">50 000</span> р</p>
+                </div>
+              </div>
+              <button class="btn  btn_services-item">Написать</button>
+            </li>
+            <li class="services__item">
+              <div class="services__img">
+                <img src="/img/services1.png" alt="">
+              </div>
+              <div class="services__text  fz32m16  f_white">
+                <p>логотип и фирменный стиль</p>
+                <div class="services__price  f_white">
+                  <p class="fz48m16">от <span class="fz64m24">50 000</span> р</p>
+                </div>
+              </div>
+              <button class="btn  btn_services-item">Написать</button>
+            </li>
+          </ul>
+          <button class="btn  btn_lg  btn_services">Смотреть все услуги</button>
+        </div>
+      </div>
+    </section>
 
 
     <section class="yandex-map">

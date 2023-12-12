@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   //burger
   const burger = document.querySelector('.burger');
   const navigation = document.querySelectorAll('.navigation')[0];
-  // const headerWhiteBefore = document.querySelector('.header_white_before');
+  // const headerWhiteBefore = document.querySelector('.header_opaque_before');
   if (burger) {
     burger.addEventListener('click', () => {
       document.body.classList.toggle('_lock');
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Showing/hiding white header on scroll
-  // const headerWhite = document.querySelector('.header_white');
+  // const headerWhite = document.querySelector('.header_opaque');
   // const headerTransparent = document.querySelector('.header_transparent');
   
   // window.addEventListener('scroll', function() {
