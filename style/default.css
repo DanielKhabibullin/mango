@@ -4,6 +4,7 @@
   --yellow: #FFC933;
   --mango: #FFB806;
   --white: #fff;
+  --black: #000;
   --bg-black: #1E1B24;
 }
 @font-face {
@@ -11,8 +12,13 @@
   font-family: 'PIXY';
   font-style: normal;
   font-weight: 400;
-  src:  url('../fonts/PIXY.otf') format('opentype'),
-  url('../fonts/PIXY.ttf') format('truetype');
+  src: url('../fonts/PIXY.eot'); /* формат EOT для IE 6-8 */
+  src: url('../fonts/PIXY.eot?#iefix') format('embedded-opentype'), /* формат EOT для IE 9 и старше */
+       url('../fonts/PIXY.woff2') format('woff2'), /* формат WOFF2 */
+       url('../fonts/PIXY.woff') format('woff'),   /* формат WOFF */
+       url('../fonts/PIXY.otf') format('opentype'), /* формат OTF */
+       url('../fonts/PIXY.ttf') format('truetype'), /* формат TTF */
+       url('../fonts/PIXY.svg#PIXY') format('svg');  /* формат SVG для iOS и Android */
 }
 html {
 	box-sizing: border-box;
@@ -101,20 +107,20 @@ button {
 .fz40m18 {
   font-size: 40px;
 }
+.fz40m16 {
+  font-size: 40px;
+}
 .fz32m16 {
   font-size: 32px;
 }
 .fz24m16 {
   font-size: 24px;
 }
-.f24m15 {
+.fz24m15 {
   font-size: 24px;
 }
 .fz24 {
   font-size: 24px;
-}
-.f_bold {
-  font-weight: 600;
 }
 .f_mango {
   color: var(--mango);
@@ -152,6 +158,9 @@ button {
   }
   .fz40m18 {
     font-size: calc(18px + (40 - 18) * ((100vw - 320px) / (1440 - 320)));
+  }
+  .fz40m16 {
+    font-size: calc(16px + (40 - 16) * ((100vw - 320px) / (1440 - 320)));
   }
   .fz32m16 {
     font-size: calc(16px + (32 - 16) * ((100vw - 320px) / (1440 - 320)));

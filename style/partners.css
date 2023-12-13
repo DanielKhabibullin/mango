@@ -1,0 +1,59 @@
+.partners {
+  position: relative;
+  padding: 57px 0 80px 0;
+}
+.partners::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  background-image: url('/img/stripe_top.png');
+}
+.partners::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  background-image: url('/img/stripe_bottom.png');
+}
+.partners__title {
+  text-align: center;
+}
+.partners__list {
+  margin: 24px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 10px;
+}
+.partners__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1440px) {
+  .partners {
+    padding: calc(49px + (57 - 49) * ((100vw - 320px) / (1440 - 320))) 0 calc(49px + (80 - 49) * ((100vw - 320px) / (1440 - 320))) 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .partners__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .partners__list {
+    margin: 32px 0 0 0;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+}

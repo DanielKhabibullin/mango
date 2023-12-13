@@ -1,0 +1,99 @@
+.contact-us {
+  padding: 106px 0 150px 0;
+}
+.contact-us__container {
+}
+.contact-us__wrapper {
+  padding: 54px 37px 55px;
+  width: 100%;
+  background-image: url('/img/contact-us.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.contact-us__title {
+}
+.form {
+  margin: 46px 0 0 0;
+}
+.contact-us__input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.contact-us__input {
+  /* margin-right: 30px; */
+  max-width: 400px;
+  width: 100%;
+  padding: 21px;
+  line-height: 1.5;
+  color: var(--font-white);
+
+  border: 1px solid var(--font-white);
+  background: transparent;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+.contact-us__input::placeholder {
+  color: var(--font-white);
+}
+.contact-us__input:focus {
+  outline: none;
+  color: var(--font-black);
+  background: var(--white);
+  border: 1px solid var(--black);
+}
+/* .contact-us__input:-webkit-autofill {
+  color: var(--font-black) !important;
+  background: var(--white) !important;
+} */
+.contact-us__btn-wrapper {
+  margin: 15px 0 0 0;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.btn_contact-us {
+  max-width: 400px;
+  width: 100%;
+}
+.contact-us__link {
+  display: inline-flex;
+  white-space: nowrap;
+}
+
+@media (max-width: 1440px) {
+  .contact-us {
+    padding: calc(50px + (106 - 50) * ((100vw - 320px) / (1440 - 320))) 0 calc(50px + (150 - 50) * ((100vw - 320px) / (1440 - 320))) 0;
+  }
+  .contact-us__wrapper {
+    padding: calc(30px + (54 - 30) * ((100vw - 320px) / (1440 - 320))) calc(30px + (37 - 30) * ((100vw - 320px) / (1440 - 320))) calc(50px + (55 - 50) * ((100vw - 320px) / (1440 - 320)));
+  }
+  .form {
+    margin: calc(24px + (46 - 24) * ((100vw - 320px) / (1440 - 320))) 0 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-us__container {
+    padding: 0;
+  }
+  .contact-us__input-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-us__btn-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn_contact-us {
+    order: 2;
+  }
+  .contact-us__link {
+    display: inline-flex;
+    white-space: nowrap;
+  }
+
+}
